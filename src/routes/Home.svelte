@@ -15,12 +15,12 @@ import {link} from 'svelte-spa-router';
         </div>
         <h1>How does it work?</h1>
         <div class="textWrapper">
-            <h2>Comet uses automatically pulls all the information it needs right from your notes. Just separate the term and defition with a colon and let Comet do the rest. While generating, each new line becoming a separate card.</h2>
+            <h2>Comet automatically pulls all the information it needs right from your notes. Just separate the term and defition with a colon and let Comet do the rest. While generating, each new line becomes a separate card.</h2>
             <img src={explain} alt="explainer" />
         </div>
         <h1>When should I use Comet?</h1>
         <div class="textWrapper">
-            <h2>Use Comet whenever you want! We all know the worst part about studying flashcards is making them, main purpose of Comet is to be a quick and easy way to make flashcards that you can just throw away after. Usure lets you skip the painful process of making cards and lets you get right to memorizing! </h2>
+            <h2>Use Comet whenever you want! We all know the worst part about studying flashcards is making them, the main purpose of Comet is to provide a quick and easy way to make flashcards. Comet lets you skip the painful process of making cards and lets you get right to memorizing! </h2>
         </div>
 
         
