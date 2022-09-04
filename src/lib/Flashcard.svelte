@@ -3,7 +3,7 @@
     export let def;
 </script>
 
-<div class="flip-card">
+<div tabindex=0 class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
         <p><strong>{title}</strong></p>
@@ -37,7 +37,7 @@ p {
   border-radius: 20px;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:focus .flip-card-inner, .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
