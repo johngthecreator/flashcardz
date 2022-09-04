@@ -2,7 +2,7 @@
 let hero = './herobanner.svg'
 let cards = './cards.svg'
 let explain = './explanation.svg'
-import { link } from "svelte-routing";
+import {link} from 'svelte-spa-router';
 </script>
 <main>
     <div style="display: flex; flex-direction: column; align-items: center;">
