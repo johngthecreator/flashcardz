@@ -15,7 +15,7 @@ import {link} from 'svelte-spa-router';
         </div>
         <h1>How does it work?</h1>
         <div class="textWrapper">
-            <h2>Comet automatically pulls all the information it needs right from your notes. Just separate the term and defition with a colon and let Comet do the rest. While generating, each new line becomes a separate card.</h2>
+            <h2>Comet automatically pulls all the information it needs right from your notes. Just separate the term and definition with a colon and let Comet do the rest. While generating, each new line becomes a separate card.</h2>
             <img src={explain} alt="explainer" />
         </div>
         <h1>When should I use Comet?</h1>
