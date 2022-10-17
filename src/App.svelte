@@ -1,34 +1,20 @@
 <script>
-  import Router,{link} from "svelte-spa-router";
+  import { Router, Link, Route } from "svelte-routing";
   import Home from "./routes/Home.svelte";
   import Practice from "./routes/Practice.svelte";
-  let mobileMenu;
-  let visible = false;
-  function showMobileMenu(){
-      if (visible){
-        visible = false;
-      }else{
-        visible = true;
-      }
-    }
-  const routes={
-    '/':Home,
-    '/flashcards':Practice
-  } 
+  export let url = "";
 </script>
-  <nav>
-  <a href="/">
-    <h2 style="color: white">CometNotes</h2>
-  </a>
-  <div class="desktopNav">
-    <a class="link" href="/flashcards" use:link>Flashcards</a>
-  </div>
-  <!-- <button class="mobileButton" on:click={showMobileMenu}>menu</button> -->
-  </nav>
-  <Router {routes} />
-  <!-- {#if visible}
-    <div class="mobileNav" transition:fly="{{ y: -100, duration: 500 }}" bind:this={mobileMenu}>
-     <Link to="/">Home</Link>
-     <Link to="practice">Practice</Link>
+  <Router url={url}>
+    <nav>
+      <Link to="/">
+        <h2 style="color: white">CometNotes</h2>
+      </Link>
+      <div class="desktopNav">
+        <Link class="link" to="flashcards" >Flashcards</Link>
+      </div>
+    </nav>
+    <div>
+      <Route path="flashcards" component="{Practice}" />
+      <Route path="/"><Home /></Route>
     </div>
-  {/if} -->
+  </Router>

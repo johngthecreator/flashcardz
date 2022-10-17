@@ -2,7 +2,7 @@
 let hero = './herobanner.svg'
 let cards = './cards.svg'
 let explain = './explanation.svg'
-import {link} from 'svelte-spa-router';
+import {Link} from "svelte-routing";
 </script>
 <main>
     <div style="display: flex; flex-direction: column; align-items: center;">
@@ -10,7 +10,7 @@ import {link} from 'svelte-spa-router';
             <img src={cards} alt="cards" />
             <div class="heroContentWrapper">
                 <h1 style="text-align: center;">the fastest way to make flashcards</h1>
-                <a class="goButton" href="/flashcards" use:link>Get Started</a>
+                <Link class="goButton" to="flashcards">Get Started</Link>
             </div>
         </div>
         <h1>How does it work?</h1>
