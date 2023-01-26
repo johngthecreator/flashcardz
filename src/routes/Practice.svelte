@@ -10,7 +10,7 @@
 
 <main>
   <CardInput />
-  {#if ($cardList.length >= 1)}
+  <!-- {#if ($cardList.length >= 1)}
     {#each $cardList as card}
       <Flashcard title={card.item.split(":")[0] ? card.item.split(":")[0].replace("-",""):"" } def={card.item.split(":")[1] ? card.item.split(":")[1]:""} />
     {/each}
@@ -21,10 +21,10 @@
   {:else}
     <h3>Make A New Flashcard Set!</h3>
   
-  {/if}
+  {/if} -->
 
   <!-- This is a ghetto feature of def on front and terms on back -->
-  <!-- {#if ($cardList.length >= 1)}
+  {#if ($cardList.length >= 1)}
     {#each $cardList as card}
       <Flashcard title={card.item.split(":")[1] ? card.item.split(":")[1].replace("-",""):"" } def={card.item.split(":")[0] ? card.item.split(":")[0]:""} />
     {/each}
@@ -34,7 +34,7 @@
     {/each}
   {:else}
     <h3>Make A New Flashcard Set!</h3>
-  {/if} -->
+  {/if}
   <!---End of ghetto feature--->
 
 </main>
