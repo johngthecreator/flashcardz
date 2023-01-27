@@ -50,4 +50,20 @@
     display:grid;
     justify-content: center;
   }
+  button{
+        font-weight: 700;
+        width: auto; 
+        color: white; 
+        padding: 15px;
+        border-radius: 10px;
+        align-items: center; 
+        background-color: #256EFF; 
+        border: 2px solid #256EFF ;
+        transition: .3s;
+    }
+    button:hover{
+        color: #256EFF;
+        border: 2px solid #256EFF ;
+        background-color: white ;
+    }
 </style>
